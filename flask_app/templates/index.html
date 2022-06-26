@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, 그리고 Bootstrap 기여자들">
+        <meta name="generator" content="Hugo 0.88.1">
+        <title>AIR QUALITY LIKE?</title>
+        <link rel="canonical" href="https://getbootstrap.kr/docs/5.1/examples/navbars/">
+        <!-- Bootstrap core CSS -->
+        <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+        <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+        <meta name="theme-color" content="#7952b3">
+            <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+        </meta>
+        <style>
+         .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;}
+        @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+        }
+      }
+
+        </style>
+        <!-- Custom styles for this template -->
+        <link href="navbar.css" rel="stylesheet">
+    </head>
+    <body class="d-flex h-100 text-center text-dark">
+    
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <header class="mb-auto">
+            <div><br>
+
+              <h3 class="float-md-start mb-0">How's the SKY?</h3><br><br>
+              <nav class="navbar navbar-dark bg-dark">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="https://www.keep.go.kr/portal/141?listStyle=&search_field=ALL&search_word=%EB%8C%80%EA%B8%B0">환경정보통</a>
+                <a class="nav-link" href="http://www.me.go.kr/home/web/board/read.do?menuId=10392&boardMasterId=713&boardId=1457740">세계 환경의 날</a>
+                <a class="nav-link" href="http://me.go.kr/BlueSky/main.html">푸른 하늘의 날</a>
+                <a class="nav-link" href="https://www.google.com/search?q=%EB%8C%80%EA%B8%B0%EC%98%A4%EC%97%BC&rlz=1C5CHFA_enKR966KR966&source=lnms&tbm=nws&sa=X&ved=2ahUKEwiIiuPYycDzAhWLPXAKHRcGDRkQ_AUoAnoECAEQBA&biw=1120&bih=1124&dpr=2">관련기사</a>
+                <a class="nav-link" href="/dashboard">DashBoard</a>
+              </nav>
+            </div>
+          </header><br><br>
+
+    
+
+          <main class="px-3"><br><br>
+            <div class="body"></div>
+                <h1>대기오염</h1><br><br>
+                    <p class="lead">
+                        <img src="{{url_for('static', filename='background.jpeg')}}" width="700" height="400"><br><br>
+
+                    <b>WHO</b><br><br>
+                    대기중에 인공적으로 배출된 오염물질이 존재하여<br><br>
+                    오염물질의 양과 그 농도 및 지속시간이 어떤 지역 주민의 불쾌감을 일으키거나<br><br>
+                    해당지역에 공중보건상 위해를 비치고 인간이나 동식물의 생활에 해를 주어<br><br>
+                    도시민의 생활과 재산을 향유할 정당한 권리를 방해받은 상태</p><br><br><hr><br><br>
+
+                
+
+              
+               
+                <div class="row g-5">
+                    <div class="col-md-5col-lg-4order-md-last">
+                        <h4 class="d-flex jusrify-content-between align-items-center mb-3">
+                            <span class="text-primary">INSERT YOUR VALUE!</span>
+                        </h4><br>
+                        <!-- <ul class="list-group mb-3"> -->
+                        <form class="needs-validation" nvaate method="POST", action="{{url_for('test.home')}}">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <b> SO2 value:  <input type="text", name='a', placeholder="enter 1"> <br><br>
+                                        NO2 value:  <input type="text", name='b', placeholder="enter 2"> <br><br>
+                                        CO value:  <input type="text", name='c', placeholder="enter 3"> <br><br>
+                                        O3 value:  <input type="text", name='d', placeholder="enter 4"> <br><br>
+                                        PM10 value:  <input type="text", name='e', placeholder="enter 5"> <br><br>
+                                        PM2.5 value: <input type="text", name='f', placeholder="enter 6"> <br><br><br></b>
+                                        <input type="submit" , value='predict!' >
+                                        <br><br><hr> 
+                                </div>
+                            </div>
+                        <!-- </ul>    -->
+                    </div>
+                </div>
+            </form>
+        </main>
+       
+            <footer class="mt-auto text-dark-50">
+                <p>Let's stop now <a href="https://github.com/ssu-jeong?tab=repositories" class="text-dark">PROJECT3</a>, by <a href="https://eight-viburnum-31d.notion.site/Study-5d06f2a3e52d41aba4fc65948ecd8274" class="text-dark">@AI_05</a>.</p><br><br>
+              </footer>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+textarea {
+    width:100%;
+}
+input[type=submit] {
+    margin-top:10px;
+}
+
+.col-md-5col-lg-4order-md-last{
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+nav>a{
+    color:white;
+}
+
+h1{
+    font-size: 30px;
+}
+
+
+h3{
+    font-size: 50px;
+
+}
+
+
+span{
+    color:black;
+}
+
+
+footer p:first-child{
+    margin-bottom: 5px;
+}
