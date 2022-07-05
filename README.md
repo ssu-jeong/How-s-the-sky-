@@ -125,7 +125,20 @@ for i in req_data['total_bad']:
 
 ---
 
-<img width="1497" alt="스크린샷 2022-07-06 오전 2 55 07" src="https://user-images.githubusercontent.com/86764734/177391515-af3b4675-e00b-4723-bc06-54e982c5f2d8.png">
+- 기본페이지
+
+<img width="1497" alt="스크린샷 2022-07-06 오전 2 55 07" src="https://user-images.githubusercontent.com/86764734/177392280-34c33bf7-f57a-44da-a34a-fb309301a46e.png">
+
+- 검색폼
+<img width="1483" alt="스크린샷 2022-07-06 오전 2 55 20" src="https://user-images.githubusercontent.com/86764734/177391551-4c34f6a9-434a-4ae1-80a6-bc778b4fdb02.png">
+
+- 결과페이지
+<img width="1498" alt="스크린샷 2022-07-06 오전 2 55 51" src="https://user-images.githubusercontent.com/86764734/177391568-4b182266-2b7f-46ce-9263-e6b61ac55b93.png">
+
+- 대시보드
+<img width="1382" alt="스크린샷 2022-07-06 오전 2 58 42" src="https://user-images.githubusercontent.com/86764734/177391587-1666e5fc-3b61-4f16-8956-18c7626169fe.png">
+
+<img width="1312" alt="스크린샷 2022-07-06 오전 2 58 57" src="https://user-images.githubusercontent.com/86764734/177391595-6596fff4-c5fe-4a2b-9a31-12c192aa5d2f.png">
 
 - 측정 항목들의 값을 표준화하여 총 대기환경을 점수로 내었을 때, 현재 오존, 미세먼지 각각의 수치를 통해 제공되는 경보 횟수보다 좀 더 많은 경보빈도를 나타냄. → 대기오염에 대한 경각심을 심어줄 수 있을 것이라 생각.
 
