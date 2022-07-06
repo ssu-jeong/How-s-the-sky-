@@ -54,14 +54,14 @@
     ```py
     # converting 'SO2' value in their standard
     def measure(x):
-    if x<=0.02:
+        if x<=0.02:
         return 'good'
-    elif 0.02<x<=0.05:
-        return 'normal'
-    elif 0.05<x<=0.15:
-        return 'bad'
-    else:
-        return 'very bad'
+        elif 0.02<x<=0.05:
+            return 'normal'
+        elif 0.05<x<=0.15:
+            return 'bad'
+        else:
+            return 'very bad'
     
     SO2_measure=list(map(measure,req_data['SO2']))
     ```
@@ -149,7 +149,7 @@ for i in req_data['total_bad']:
 - 모델성능향상
     - 이번 프로젝트는 웹서비스에 초점을 두고 진행을 하다보니 모델성능에 초점을 맞추지 못했음.
     - 모델의 성능이 높지 않아 정확한 결과라고 보기 어려운 부분도 있어 모델 성능을 높여 좀 더 정확한 결과값 제공할 수 있도록
-- CSS tnwjd
+- CSS 수정
     - 결과 출력시 화면이 하단에 치우쳐있어서 시각적으로 불편한 부분이 있어 추후 수정
 - 부트스트랩
     - 부트스트랩을 적용해보려 했으나 처음하는 작업이다 보니 시간내 적용하기 쉽지 않았기 때문에 다시 시도하여 좀 더 완성도 있는 웹으로 수정
